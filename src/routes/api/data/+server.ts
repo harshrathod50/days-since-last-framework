@@ -1,7 +1,11 @@
-import type { RequestHandler } from "./$types";
-import redis from "../../../util/redis";
 import { POST_TOKEN } from "$env/static/private";
+import redis from "../../../util/redis";
+import type { RequestHandler } from "./$types";
 
+/**
+ * use /api/add instead
+ * @deprecated
+ */
 export const POST: RequestHandler = async ({ request }) => {
   const { link, name, token } = await request.json();
 
