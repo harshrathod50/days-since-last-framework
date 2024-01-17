@@ -1,6 +1,6 @@
 # days-since-last-framework
 
-Simple counter for counting _days since last framework_ release. Production version can be found [here](https://js.cuvar.dev)
+Simple counter for counting _days since last framework_ release. Production version can be found [here](https://dayssincelastjsframework.com/)
 
 ## Contributing
 
