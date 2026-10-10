@@ -1,7 +1,7 @@
-import { db } from "../db";
+import { getDb } from "../db";
 
 export async function getAll() {
-  const allFrameWorks = await db.framework.findMany({
+  const allFrameWorks = await getDb().framework.findMany({
     orderBy: {
       date: "desc", // Order the results by date in descending order
     },
@@ -10,7 +10,7 @@ export async function getAll() {
 }
 
 export async function getLatest() {
-  const mostCurrent = await db.framework.findFirst({
+  const mostCurrent = await getDb().framework.findFirst({
     orderBy: {
       date: "desc", // Order the results by date in descending order
     },

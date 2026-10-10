@@ -1,9 +1,11 @@
 import { defineConfig } from "eslint/config";
+import gitignore from 'eslint-config-flat-gitignore'
 import nextVitals from "eslint-config-next/core-web-vitals";
 import tseslint from "typescript-eslint";
 
 export default defineConfig([
   ...nextVitals,
+  gitignore(),
   {
     files: ["**/*.ts", "**/*.tsx"],
     extends: [
